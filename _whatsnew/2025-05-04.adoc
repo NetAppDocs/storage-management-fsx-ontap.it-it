@@ -1,0 +1,39 @@
+= Supporto alla risposta del tracker
+:allow-uri-read: 
+
+
+
+
+=== Supporto alla risposta del tracker
+
+Tracker ora fornisce risposte API in modo da poter visualizzare l'output dell'API REST correlato all'attività.
+
+
+
+=== Supporto per l'autenticazione dei link per AWS Secrets Manager
+
+Ora hai la possibilità di utilizzare i segreti di AWS Secrets Manager per autenticare i collegamenti, in modo da non dover utilizzare le credenziali archiviate in BlueXP Workloads.
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["Connettersi a un file system FSx for ONTAP con un collegamento Lambda"]
+
+
+
+=== Implementare le best practice per un file system FSx per ONTAP
+
+BlueXP Workloads fornisce una dashboard in cui è possibile esaminare lo stato ben strutturato delle configurazioni del file system.  È possibile sfruttare questa analisi per implementare le best practice per i file system FSx for ONTAP .  L'analisi della configurazione del file system include le seguenti configurazioni: soglia di capacità SSD, snapshot locali pianificati, backup FSx per ONTAP pianificati, suddivisione in livelli dei dati e replica remota dei dati.
+
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/configuration-analysis.html["Scopri l'analisi ben progettata per le configurazioni del file system"]
+* link:https://review.docs.netapp.com/us-en/workload-fsx-ontap_well-architected/improve-configurations.html["Implementa le migliori pratiche per i tuoi file system"]
+
+
+
+
+=== Notifica ben progettata per problemi del file system
+
+Nella console BlueXP , i file system FSx per ONTAP con problemi ben progettati ora visualizzano una notifica in Canvas che indica quando i file system presentano problemi da risolvere.
+
+
+
+=== Terminologia aggiornata delle autorizzazioni
+
+L'interfaccia utente e la documentazione della Workload Factory ora utilizzano "sola lettura" per fare riferimento alle autorizzazioni di lettura e "lettura/scrittura" per fare riferimento alle autorizzazioni di automazione.

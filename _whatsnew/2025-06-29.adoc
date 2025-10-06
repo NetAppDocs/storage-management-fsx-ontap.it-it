@@ -1,0 +1,11 @@
+= Aggiornamento delle credenziali
+:allow-uri-read: 
+
+
+
+
+=== Aggiornamento delle credenziali
+
+Dopo aver impostato le credenziali e le autorizzazioni per il file system FSx for ONTAP , verrai reindirizzato alla pagina Credenziali BlueXP .  Da questa pagina puoi rinominare o rimuovere le tue credenziali FSx per ONTAP .
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Impostare le autorizzazioni per FSx per i file system ONTAP"]

@@ -1,0 +1,15 @@
+= Aggiungi una VM di archiviazione
+:allow-uri-read: 
+
+
+
+
+=== Aggiungi una VM di archiviazione
+
+Ora puoi aggiungere una VM di archiviazione al file system Amazon FSx for NetApp ONTAP utilizzando BlueXP.
+
+
+
+=== La scheda **Le mie opportunità** ora è **Il mio patrimonio**
+
+La scheda **Le mie opportunità** ora si chiama **Il mio patrimonio**.  La documentazione è stata aggiornata per riflettere il nuovo nome.

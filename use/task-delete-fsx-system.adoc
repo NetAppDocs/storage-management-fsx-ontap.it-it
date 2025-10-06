@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: use/task-delete-fsx-system.html 
+keywords: file system, delete file system, file system deletion 
+summary: Per eliminare un file system dalla console NetApp , è necessario prima eliminare tutti i volumi, le VM di archiviazione o le relazioni di replicazione associati al file system. 
+---
+= Elimina un file system FSx per ONTAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per eliminare un file system FSx for ONTAP , è necessario prima eliminare tutti i volumi, le VM di archiviazione o le relazioni di replica associati al file system.
+
+.Passi
+. Dal menu NetApp Console, selezionare *Storage* e quindi *Gestione*.
+. Selezionare il file system che si desidera rimuovere.
+. Selezionare *Entra nel sistema*.
+. Da FSx per ONTAP in Storage, selezionare il menu a tre punti e quindi selezionare *Elimina*.
+. Selezionare *Elimina* per confermare l'eliminazione.
+

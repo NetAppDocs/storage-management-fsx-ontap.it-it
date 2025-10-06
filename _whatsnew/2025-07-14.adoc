@@ -1,0 +1,11 @@
+= Supporto per la replica dei dati tra due file system FSx per ONTAP
+:allow-uri-read: 
+
+
+
+
+=== Supporto per la replica dei dati tra due file system FSx per ONTAP
+
+La replica dei dati è ora disponibile tra due file system FSx per ONTAP dalla canvas nella console BlueXP .
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["Replicare i dati"]

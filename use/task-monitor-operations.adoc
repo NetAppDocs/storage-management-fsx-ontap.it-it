@@ -1,0 +1,93 @@
+---
+sidebar: sidebar 
+permalink: use/task-monitor-operations.html 
+keywords: monitor jobs, track jobs, monitor, track, NetApp Console, bluexp 
+summary: 'Tieni traccia delle operazioni FSx per ONTAP e monitora l"avanzamento delle operazioni con Tracker nella console NetApp .' 
+---
+= Monitorare FSx per le operazioni ONTAP con Tracker nella console NetApp
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Monitora e tieni traccia dell'esecuzione delle operazioni FSx for ONTAP e monitora l'avanzamento dei lavori con Tracker nella console NetApp .
+
+.Informazioni su questo compito
+NetApp Console fornisce Tracker, una funzionalità di monitoraggio dei lavori, che consente di monitorare e tenere traccia dell'avanzamento e dello stato delle credenziali, di FSx per ONTAP e delle operazioni di collegamento, rivedere i dettagli delle attività e delle sottoattività operative e diagnosticare eventuali problemi o guasti.
+
+In Tracker sono disponibili diverse azioni.  È possibile filtrare i lavori in base all'intervallo di tempo (ultime 24 ore, 7 giorni, 14 giorni o 30 giorni), al carico di lavoro, allo stato e all'utente; trovare lavori utilizzando la funzione di ricerca e scaricare la tabella dei lavori come file CSV.  Puoi aggiornare Tracker in qualsiasi momento.  È possibile riprovare rapidamente un'operazione non riuscita o modificare i parametri di un'operazione non riuscita e riprovare l'operazione.
+
+Tracker supporta due livelli di monitoraggio a seconda dell'operazione.  Ogni attività, ad esempio la distribuzione del file system, visualizza la descrizione dell'attività, lo stato, l'ora di inizio, la durata dell'attività, l'utente, la regione, la risorsa proxy, l'ID attività e tutte le sottoattività correlate.  È possibile visualizzare le risposte API per capire cosa è successo durante l'operazione.
+
+Livelli di attività del tracker con esempi::
++
+--
+* Livello 1 (attività padre): tiene traccia della distribuzione del file system.
+* Livello 2 (sottoattività): tiene traccia delle sottoattività relative alla distribuzione del file system.
+
+
+--
+Stato operativo:: Lo stato dell'operazione in Tracker è il seguente: _in corso_, _riuscito_ e _fallito_.
+Frequenza di funzionamento:: La frequenza delle operazioni dipende dal tipo di attività e dalla pianificazione.
+Conservazione degli eventi:: Gli eventi vengono conservati nell'interfaccia utente per 30 giorni.
+
+
+
+
+== Tracciare e monitorare le operazioni
+
+Monitora e monitora le operazioni nella console NetApp con Tracker.
+
+.Passi
+. Dal menu NetApp Console, seleziona *Carichi di lavoro* e poi *Amministrazione*.
+. Dal menu Amministrazione, seleziona *Tracker*.
+. In Tracker, visualizza le attività oppure usa i filtri o la ricerca per restringere i risultati.  È anche possibile scaricare un report di tutte le operazioni selezionando *Esporta CSV*.
+
+
+
+
+== Visualizza la richiesta API
+
+Visualizza la richiesta API nella Codebox per un'attività in Tracker.
+
+.Passi
+. In Tracker, seleziona un'attività.
+. Selezionare il menu a tre punti e quindi selezionare *Visualizza richiesta API*.
+
+
+
+
+== Riprova un'operazione non riuscita
+
+Riprova un'operazione non riuscita in Tracker.  Riprovando l'operazione non riuscita viene avviata una nuova attività che puoi monitorare in Tracker.
+
+È anche possibile copiare il messaggio di errore di un'operazione non riuscita.
+
+
+NOTE: È possibile riprovare l'operazione non riuscita solo una volta.
+
+.Passi
+. In Tracker, seleziona un'operazione non riuscita.
+. Selezionare il menu a tre punti e quindi selezionare *Riprova*.
+
+
+.Risultato
+L'operazione viene riavviata e appare come una nuova attività in Tracker.
+
+
+
+== Modifica e riprova un'operazione non riuscita
+
+Modificare i parametri dell'operazione non riuscita e riprovare l'operazione all'esterno di Tracker.
+
+.Passi
+. In Tracker, seleziona un'operazione non riuscita.
+. Selezionare il menu a tre punti e poi selezionare *Modifica e riprova*.
++
+Verrai reindirizzato alla pagina dell'operazione, ad esempio la creazione del volume, dove potrai modificare i parametri e riprovare l'operazione.
+
+
+
+.Risultato
+L'operazione viene riavviata.  Vai su Tracker per visualizzare lo stato dell'operazione.

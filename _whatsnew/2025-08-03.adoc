@@ -1,0 +1,16 @@
+= Miglioramenti alla scheda Relazioni di replicazione
+:allow-uri-read: 
+
+
+
+
+=== Miglioramenti alla scheda Relazioni di replicazione
+
+Abbiamo aggiunto diverse nuove colonne alla tabella delle relazioni di replicazione per fornirti maggiori informazioni sulle relazioni di replicazione nella scheda *Relazioni di replicazione*. La tabella ora include le seguenti colonne:
+
+* Politica SnapMirror
+* File system sorgente
+* File system di destinazione
+* Stato della relazione
+* Ultimo orario di trasferimento
+
