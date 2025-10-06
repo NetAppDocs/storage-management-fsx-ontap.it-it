@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: requirements/task-setting-up-permissions-fsx.html 
 keywords: fsx for ontap, iam, user role, permissions, credentials, bluexp 
-summary: 'Per creare o gestire un ambiente di lavoro FSx for ONTAP , è necessario aggiungere le credenziali AWS nella console NetApp fornendo l"ARN di un ruolo IAM che fornisce le autorizzazioni necessarie per creare un sistema FSx for ONTAP dalla console NetApp .' 
+summary: 'Per creare o gestire un ambiente di lavoro FSx for ONTAP , è necessario aggiungere le credenziali AWS nella NetApp Console fornendo l"ARN di un ruolo IAM che fornisce le autorizzazioni necessarie per creare un sistema FSx for ONTAP dalla NetApp Console.' 
 ---
 = Impostare le autorizzazioni per FSx per ONTAP
 :hardbreaks:
@@ -14,15 +14,15 @@ summary: 'Per creare o gestire un ambiente di lavoro FSx for ONTAP , è necessar
 
 
 [role="lead"]
-Per creare o gestire un ambiente di lavoro FSx for ONTAP , è necessario aggiungere le credenziali AWS nella console NetApp fornendo l'ARN di un ruolo IAM che fornisce le autorizzazioni necessarie per creare un sistema FSx for ONTAP dalla console NetApp .
+Per creare o gestire un ambiente di lavoro FSx for ONTAP , è necessario aggiungere le credenziali AWS nella NetApp Console fornendo l'ARN di un ruolo IAM che fornisce le autorizzazioni necessarie per creare un sistema FSx for ONTAP dalla NetApp Console.
 
 
 
 == Perché sono richieste le credenziali AWS
 
-Per creare e gestire i sistemi FSx for ONTAP dalla console NetApp sono necessarie le credenziali AWS.  Puoi creare nuove credenziali AWS o aggiungerle a un'organizzazione esistente.  Le credenziali forniscono le autorizzazioni necessarie per gestire risorse e processi all'interno dell'ambiente cloud AWS dalla console NetApp .
+Per creare e gestire i sistemi FSx for ONTAP dalla NetApp Console sono necessarie le credenziali AWS.  Puoi creare nuove credenziali AWS o aggiungerle a un'organizzazione esistente.  Le credenziali forniscono le autorizzazioni necessarie per gestire risorse e processi all'interno dell'ambiente cloud AWS dalla NetApp Console.
 
-Le credenziali e le autorizzazioni vengono gestite tramite NetApp Workload Factory.  Workload Factory è una piattaforma di gestione del ciclo di vita progettata per aiutare gli utenti a ottimizzare i carichi di lavoro utilizzando i file system Amazon FSx for NetApp ONTAP .  La console NetApp utilizza lo stesso set di credenziali e autorizzazioni AWS di Workload Factory.
+Le credenziali e le autorizzazioni vengono gestite tramite NetApp Workload Factory.  Workload Factory è una piattaforma di gestione del ciclo di vita progettata per aiutare gli utenti a ottimizzare i carichi di lavoro utilizzando i file system Amazon FSx for NetApp ONTAP .  La NetApp Console utilizza lo stesso set di credenziali e autorizzazioni AWS di Workload Factory.
 
 L'interfaccia Workload Factory fornisce agli utenti di FSx for ONTAP opzioni per abilitare funzionalità di carichi di lavoro quali Storage, VMware, Database e GenAI e per selezionare le autorizzazioni per i carichi di lavoro.  _Storage_ è la funzionalità di gestione dell'archiviazione in Workload Factory ed è l'unica funzionalità che devi abilitare e per la quale devi aggiungere credenziali per creare e gestire i tuoi file system FSx for ONTAP .
 
@@ -34,7 +34,7 @@ Quando aggiungi nuove credenziali per FSx for ONTAP da Storage in Workload Facto
 
 Le credenziali AWS nuove ed esistenti sono visualizzabili dal menu Amministrazione nella pagina *Credenziali*.
 
-image:screenshot-netapp-console-administration-credentials.png["Uno screenshot del menu Amministrazione e dell'opzione Credenziali evidenziata nel menu di amministrazione della console NetApp ."]
+image:screenshot-netapp-console-administration-credentials.png["Uno screenshot del menu Amministrazione e dell'opzione Credenziali evidenziata nel menu di amministrazione NetApp Console ."]
 
 È possibile aggiungere le credenziali utilizzando due metodi:
 
@@ -46,22 +46,22 @@ image:screenshot-netapp-console-administration-credentials.png["Uno screenshot d
 
 == Aggiungere manualmente le credenziali a un account
 
-Puoi aggiungere manualmente le credenziali AWS alla console NetApp per concedere al tuo account le autorizzazioni necessarie per gestire le risorse AWS che utilizzerai per eseguire i tuoi carichi di lavoro esclusivi. Ogni set di credenziali aggiunto includerà una o più policy IAM in base alle funzionalità del carico di lavoro che si desidera utilizzare e un ruolo IAM assegnato al proprio account.
+Puoi aggiungere manualmente le credenziali AWS alla NetApp Console per concedere al tuo account le autorizzazioni necessarie per gestire le risorse AWS che utilizzerai per eseguire i tuoi carichi di lavoro esclusivi.  Ogni set di credenziali aggiunto includerà una o più policy IAM in base alle funzionalità del carico di lavoro che si desidera utilizzare e un ruolo IAM assegnato al proprio account.
 
 La creazione delle credenziali si compone di tre fasi:
 
 * Seleziona i servizi e il livello di autorizzazioni che desideri utilizzare, quindi crea policy IAM dalla AWS Management Console.
 * Crea un ruolo IAM dalla AWS Management Console.
-* Da Carichi di lavoro nella console NetApp , immettere un nome e aggiungere le credenziali.
+* Da Carichi di lavoro nella NetApp Console, immettere un nome e aggiungere le credenziali.
 
 
-Per creare o gestire un ambiente di lavoro FSx for ONTAP , è necessario aggiungere le credenziali AWS a Workloads nella console NetApp fornendo l'ARN di un ruolo IAM che fornisce a Workloads le autorizzazioni necessarie per creare un ambiente di lavoro FSx for ONTAP .
+Per creare o gestire un ambiente di lavoro FSx for ONTAP , è necessario aggiungere le credenziali AWS a Workloads nella NetApp Console fornendo l'ARN di un ruolo IAM che fornisce a Workloads le autorizzazioni necessarie per creare un ambiente di lavoro FSx for ONTAP .
 
 .Prima di iniziare
 Per accedere al tuo account AWS dovrai disporre delle credenziali.
 
 .Passi
-. Dal menu NetApp Console, selezionare *Amministrazione* e quindi *Credenziali*.
+. Dal menu NetApp Console , selezionare *Amministrazione* e quindi *Credenziali*.
 . Dalla pagina *Credenziali dell'organizzazione*, seleziona *Aggiungi credenziali*.
 . Selezionare *Amazon Web Services*, quindi *FSx per ONTAP* e infine *Avanti*.
 +
@@ -216,13 +216,13 @@ Il passaggio finale consiste nell'inserire un nome per le credenziali in Carichi
 
 
 .Risultato
-Le credenziali vengono create e sono visualizzabili nella pagina Credenziali.  Ora è possibile utilizzare le credenziali durante la creazione di un ambiente di lavoro FSx per ONTAP .  Ogni volta che è necessario, è possibile rinominare le credenziali o rimuoverle dalla console NetApp .
+Le credenziali vengono create e sono visualizzabili nella pagina Credenziali.  Ora è possibile utilizzare le credenziali durante la creazione di un ambiente di lavoro FSx per ONTAP .  Ogni volta che è necessario, è possibile rinominare le credenziali o rimuoverle dalla NetApp Console.
 
 
 
 == Aggiungere credenziali a un account utilizzando CloudFormation
 
-Puoi aggiungere le credenziali AWS ai carichi di lavoro utilizzando uno stack AWS CloudFormation selezionando le funzionalità del carico di lavoro che desideri utilizzare e quindi avviando lo stack AWS CloudFormation nel tuo account AWS. CloudFormation creerà i criteri IAM e il ruolo IAM in base alle capacità del carico di lavoro selezionate.
+Puoi aggiungere le credenziali AWS ai carichi di lavoro utilizzando uno stack AWS CloudFormation selezionando le funzionalità del carico di lavoro che desideri utilizzare e quindi avviando lo stack AWS CloudFormation nel tuo account AWS.  CloudFormation creerà i criteri IAM e il ruolo IAM in base alle capacità del carico di lavoro selezionate.
 
 .Prima di iniziare
 * Per accedere al tuo account AWS dovrai disporre delle credenziali.
@@ -262,7 +262,7 @@ Puoi aggiungere le credenziali AWS ai carichi di lavoro utilizzando uno stack AW
 
 
 .Passi
-. Dal menu NetApp Console, selezionare *Amministrazione* e quindi *Credenziali*.
+. Dal menu NetApp Console , selezionare *Amministrazione* e quindi *Credenziali*.
 . Seleziona *Aggiungi credenziali*.
 . Selezionare *Amazon Web Services*, quindi *FSx per ONTAP* e infine *Avanti*.
 +
@@ -291,4 +291,4 @@ Ora ti trovi nella pagina *Aggiungi credenziali* in NetApp Workloads.
 
 
 .Risultato
-Le credenziali vengono create e sono visualizzabili nella pagina Credenziali.  Ora è possibile utilizzare le credenziali durante la creazione di un ambiente di lavoro FSx per ONTAP .  Ogni volta che è necessario, è possibile rinominare le credenziali o rimuoverle dalla console NetApp .
+Le credenziali vengono create e sono visualizzabili nella pagina Credenziali.  Ora è possibile utilizzare le credenziali durante la creazione di un ambiente di lavoro FSx per ONTAP .  Ogni volta che è necessario, è possibile rinominare le credenziali o rimuoverle dalla NetApp Console.

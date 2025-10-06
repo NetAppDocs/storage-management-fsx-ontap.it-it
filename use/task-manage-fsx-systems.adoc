@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: use/task-manage-fsx-systems.html 
 keywords: amazon fsx for netapp ontap, fsx, manage fsx for ontap system, delete fsx for ontap system, remove fsx for ontap system, throughput capacity, change throughput, automatic capacity management, capacity management, storage capacity, replication, classification, sync, backup, recovery, bluexp, NetApp Console 
-summary: Dopo aver creato o individuato un sistema FSx for ONTAP nella console NetApp , è possibile gestire il file system e utilizzare i servizi dati NetApp che forniscono funzionalità quali backup e ripristino. 
+summary: Dopo aver creato o individuato un sistema FSx for ONTAP in NetApp Console, è possibile gestire il file system e utilizzare i servizi dati NetApp che forniscono funzionalità quali backup e ripristino. 
 ---
-= Gestire un file system FSx per ONTAP nella console NetApp
+= Gestire un file system FSx per ONTAP nella NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: Dopo aver creato o individuato un sistema FSx for ONTAP nella console N
 
 
 [role="lead"]
-Dopo aver creato o individuato un sistema FSx for ONTAP nella console NetApp , è possibile gestire il file system creando volumi, gestendo VM di storage, proteggendo i dati e amministrando il file system.  La Console consente inoltre di utilizzare servizi dati che offrono funzionalità quali backup e ripristino, classificazione dei dati, sincronizzazione dei dati e altro ancora.
+Dopo aver creato o individuato un sistema FSx for ONTAP nella NetApp Console, è possibile gestire il file system creando volumi, gestendo VM di storage, proteggendo i dati e amministrando il file system.  La Console consente inoltre di utilizzare servizi dati che offrono funzionalità quali backup e ripristino, classificazione dei dati, sincronizzazione dei dati e altro ancora.
 
 
 
 == Gestisci un file system utilizzando NetApp Workloads
 
-Quando si apre un sistema FSx for ONTAP dalla pagina Sistemi della console NetApp , si accede a NetApp Workloads.  Workloads è un servizio di ottimizzazione e automazione intelligente che utilizza le migliori pratiche del settore per progettare, configurare e gestire carichi di lavoro chiave utilizzando Amazon FSx for NetApp ONTAP.
+Quando si apre un sistema FSx for ONTAP dalla pagina Sistemi NetApp Console , si accede a NetApp Workloads.  Workloads è un servizio di ottimizzazione e automazione intelligente che utilizza le migliori pratiche del settore per progettare, configurare e gestire carichi di lavoro chiave utilizzando Amazon FSx for NetApp ONTAP.
 
 https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Scopri come gestire un file system utilizzando NetApp Workloads"^]
 
@@ -76,7 +76,7 @@ Replicare i dati per supportare il backup e il ripristino di emergenza.  La repl
 
 link:https://docs.netapp.com/us-en/data-services-replication/task-replicating-data.html["Inizia con NetApp Replication"^]
 
-La replica dei dati tra due file system FSx for ONTAP è possibile dalla pagina Sistemi della console NetApp .
+La replica dei dati tra due file system FSx for ONTAP è possibile dalla pagina Sistemi NetApp Console .
 
 .Prima di iniziare
 Prima di iniziare, tieni presente quanto segue.
@@ -86,14 +86,14 @@ Prima di iniziare, tieni presente quanto segue.
 
 
 .Passi
-. Dalla pagina Sistemi console NetApp , trascinare il file system FSx for ONTAP di origine sopra il file system FSx for ONTAP di destinazione e selezionare *Replica*.
+. Dalla pagina Sistemi NetApp Console , trascinare il file system FSx for ONTAP di origine sopra il file system FSx for ONTAP di destinazione e selezionare *Replica*.
 . Nella pagina Crea replica, seleziona i volumi di origine da replicare, quindi *Avanti*.
 . In Destinazione replica, fornire quanto segue:
 +
 .. *Nome della destinazione*: il nome della destinazione è stato selezionato in precedenza durante l'operazione di trascinamento e rilascio nella tela.
 .. *Nome VM di archiviazione*: seleziona la VM di archiviazione dal menu a discesa.  La VM di archiviazione selezionata è la destinazione per tutti i volumi selezionati in questa relazione di replica.
 .. *Nome volume*: il nome del volume di destinazione viene generato automaticamente con il seguente formato `{OriginalVolumeName}_copy` .  È possibile utilizzare il nome del volume generato automaticamente oppure immettere un altro nome del volume.
-.. *Caso d'uso*: selezionare uno dei seguenti casi d'uso per la replica. A seconda del caso d'uso selezionato, Workload Factory compila il modulo con i valori consigliati in conformità con le best practice. È possibile accettare i valori consigliati o apportare modifiche durante la compilazione del modulo.
+.. *Caso d'uso*: selezionare uno dei seguenti casi d'uso per la replica.  A seconda del caso d'uso selezionato, Workload Factory compila il modulo con i valori consigliati in conformità con le best practice.  È possibile accettare i valori consigliati o apportare modifiche durante la compilazione del modulo.
 +
 *** Migrazione: trasferisce i dati al file system FSx for ONTAP di destinazione
 *** Ripristino di emergenza a caldo: garantisce elevata disponibilità e rapido ripristino di emergenza per carichi di lavoro critici
@@ -119,10 +119,10 @@ Per tutti i casi d'uso, se si abilitano gli snapshot per la conservazione a lung
 
 .. *Criterio di suddivisione in livelli*: selezionare il criterio di suddivisione in livelli per i dati archiviati nel volume di destinazione.  Per impostazione predefinita, la politica di suddivisione in livelli è quella consigliata per il caso d'uso selezionato.
 +
-_Bilanciato (Automatico)_ è il criterio di suddivisione in livelli predefinito quando si crea un volume utilizzando la console Workload Factory. Per ulteriori informazioni sulle politiche di suddivisione in livelli del volume, fare riferimento alink:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["Capacità di archiviazione del volume"^] nella documentazione di AWS FSx per NetApp ONTAP . Si noti che Workload Factory utilizza nomi basati sui casi d'uso nella console Workload Factory per i criteri di suddivisione in livelli e include i nomi dei criteri di suddivisione in livelli FSx for ONTAP tra parentesi.
+_Bilanciato (Automatico)_ è il criterio di suddivisione in livelli predefinito quando si crea un volume utilizzando la console Workload Factory.  Per ulteriori informazioni sulle politiche di suddivisione in livelli del volume, fare riferimento alink:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/volume-storage-capacity.html#data-tiering-policy["Capacità di archiviazione del volume"^] nella documentazione di AWS FSx per NetApp ONTAP .  Si noti che Workload Factory utilizza nomi basati sui casi d'uso nella console Workload Factory per i criteri di suddivisione in livelli e include i nomi dei criteri di suddivisione in livelli FSx for ONTAP tra parentesi.
 
 +
-Se hai selezionato il caso d'uso di migrazione, Workload Factory sceglie automaticamente di copiare la policy di suddivisione in livelli del volume di origine nel volume di destinazione. È possibile deselezionare la copia del criterio di suddivisione in livelli e selezionare un criterio di suddivisione in livelli che si applichi al volume selezionato per la replica.
+Se hai selezionato il caso d'uso di migrazione, Workload Factory sceglie automaticamente di copiare la policy di suddivisione in livelli del volume di origine nel volume di destinazione.  È possibile deselezionare la copia del criterio di suddivisione in livelli e selezionare un criterio di suddivisione in livelli che si applichi al volume selezionato per la replica.
 
 .. *Velocità di trasferimento massima*: seleziona *Limitata* e inserisci il limite massimo di trasferimento in MB/s.  In alternativa, seleziona *Illimitato*.
 +
@@ -168,4 +168,4 @@ NOTE: Per una conservazione a lungo termine è necessario che le etichette di or
 
 NetApp Volume Caching fornisce un volume persistente e scrivibile in una posizione remota.  È possibile utilizzare la memorizzazione nella cache dei volumi per velocizzare l'accesso ai dati o per scaricare il traffico dai volumi a cui si accede più frequentemente.
 
-link:https://docs.netapp.com/us-en/console-volume-caching/get-started/cache-intro.html["Introduzione alla memorizzazione nella cache dei volumi NetApp"^]
+link:https://docs.netapp.com/us-en/console-volume-caching/get-started/cache-intro.html["Introduzione alla memorizzazione nella NetApp Volume Caching"^]

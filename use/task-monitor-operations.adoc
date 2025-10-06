@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: use/task-monitor-operations.html 
 keywords: monitor jobs, track jobs, monitor, track, NetApp Console, bluexp 
-summary: 'Tieni traccia delle operazioni FSx per ONTAP e monitora l"avanzamento delle operazioni con Tracker nella console NetApp .' 
+summary: 'Tieni traccia delle operazioni FSx per ONTAP e monitora l"avanzamento delle operazioni con Tracker nella NetApp Console.' 
 ---
-= Monitorare FSx per le operazioni ONTAP con Tracker nella console NetApp
+= Monitorare FSx per le operazioni ONTAP con Tracker nella NetApp Console
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Monitora e tieni traccia dell'esecuzione delle operazioni FSx for ONTAP e monitora l'avanzamento dei lavori con Tracker nella console NetApp .
+Monitora e tieni traccia dell'esecuzione delle operazioni FSx for ONTAP e monitora l'avanzamento dei lavori con Tracker nella NetApp Console.
 
 .Informazioni su questo compito
 NetApp Console fornisce Tracker, una funzionalità di monitoraggio dei lavori, che consente di monitorare e tenere traccia dell'avanzamento e dello stato delle credenziali, di FSx per ONTAP e delle operazioni di collegamento, rivedere i dettagli delle attività e delle sottoattività operative e diagnosticare eventuali problemi o guasti.
@@ -37,10 +37,10 @@ Conservazione degli eventi:: Gli eventi vengono conservati nell'interfaccia uten
 
 == Tracciare e monitorare le operazioni
 
-Monitora e monitora le operazioni nella console NetApp con Tracker.
+Monitora e monitora le operazioni nella NetApp Console con Tracker.
 
 .Passi
-. Dal menu NetApp Console, seleziona *Carichi di lavoro* e poi *Amministrazione*.
+. Dal menu NetApp Console , seleziona *Carichi di lavoro* e poi *Amministrazione*.
 . Dal menu Amministrazione, seleziona *Tracker*.
 . In Tracker, visualizza le attività oppure usa i filtri o la ricerca per restringere i risultati.  È anche possibile scaricare un report di tutte le operazioni selezionando *Esporta CSV*.
 
