@@ -8,4 +8,4 @@
 
 Ogni volta che utilizzi CloudShell per eseguire operazioni FSx for ONTAP da BlueXP Workloads, gli eventi vengono visualizzati in Tracker.
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["Scopri come monitorare e tracciare le operazioni FSx per ONTAP in BlueXP"^]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-monitor-operations.html["Scopri come monitorare e tracciare le operazioni FSx per ONTAP in BlueXP"]

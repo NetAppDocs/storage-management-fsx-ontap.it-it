@@ -6,7 +6,7 @@
 
 === Ora di inizio della finestra di manutenzione
 
-Quandolink:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["creare un ambiente di lavoro"] , è possibile specificare l'ora di inizio della finestra di manutenzione settimanale di 30 minuti per garantire che la manutenzione non entri in conflitto con attività aziendali critiche.
+Quandolink:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-create-fsx-system.html["creare un ambiente di lavoro"] , è possibile specificare l'ora di inizio della finestra di manutenzione settimanale di 30 minuti per garantire che la manutenzione non entri in conflitto con attività aziendali critiche.
 
 
 

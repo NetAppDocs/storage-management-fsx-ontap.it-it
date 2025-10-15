@@ -8,7 +8,7 @@
 
 Dopo l'integrazione BlueXP nel novembre 2024, i file system FSx per ONTAP appena creati non erano associati a un'area di lavoro in BlueXP.  Ora, quando si creano o si scoprono file system FSx per ONTAP , questi vengono associati a un'area di lavoro all'interno di un account BlueXP .
 
-Se disponi di file system FSx per ONTAP esistenti che non sono associati a un'area di lavoro, ti aiuteremo ad associarli a un'area di lavoro in BlueXP.  Puoilink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support["crea un caso con il supporto NetApp"^] dall'interno della console BlueXP .  Selezionare *Workload Factory* come servizio.
+Se disponi di file system FSx per ONTAP esistenti che non sono associati a un'area di lavoro, ti aiuteremo ad associarli a un'area di lavoro in BlueXP. Puoilink:https://docs.netapp.com/us-en/console-setup-admin/task-get-help.html#create-a-case-with-netapp-support["crea un caso con il supporto NetApp"^] dall'interno della console BlueXP . Selezionare *Workload Factory* come servizio.
 
 
 
@@ -16,7 +16,7 @@ Se disponi di file system FSx per ONTAP esistenti che non sono associati a un'ar
 
 Ora è possibile rimuovere un file system FSx for ONTAP da un'area di lavoro nell'area di lavoro BlueXP .  Questa operazione dissocia il file system da un'area di lavoro in modo da poterlo associare a un'altra area di lavoro all'interno dello stesso account BlueXP .
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-remove-filesystem.html["Scopri come rimuovere un file system FSx for ONTAP da un'area di lavoro in BlueXP"^]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-remove-filesystem.html["Scopri come rimuovere un file system FSx for ONTAP da un'area di lavoro in BlueXP"]
 
 
 
@@ -24,7 +24,7 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-remove-filesystem.h
 
 Tracker, una nuova funzionalità di monitoraggio, è disponibile in BlueXP Amazon FSx for NetApp ONTAP.  È possibile utilizzare Tracker per monitorare e tenere traccia dell'avanzamento e dello stato delle operazioni di credenziali, archiviazione e collegamento, rivedere i dettagli delle attività e sottoattività delle operazioni, diagnosticare eventuali problemi o errori, modificare i parametri per le operazioni non riuscite e riprovare le operazioni non riuscite.
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["Scopri come monitorare e tracciare le operazioni FSx per ONTAP in BlueXP"^]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-monitor-operations.html["Scopri come monitorare e tracciare le operazioni FSx per ONTAP in BlueXP"]
 
 
 
