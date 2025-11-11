@@ -6,6 +6,6 @@
 
 === Supporto per la replica tra sistemi ONTAP locali e file system FSx per ONTAP
 
-La replica dei dati è disponibile tra un sistema ONTAP locale e un file system FSx for ONTAP da FSx for ONTAP all'interno della NetApp Console.
+La replica dei dati è disponibile tra un sistema ONTAP locale e un file system FSx for ONTAP dalla pagina Sistemi NetApp Console .
 
 link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-manage-fsx-systems.html#replicate-data["Replicare i dati"]

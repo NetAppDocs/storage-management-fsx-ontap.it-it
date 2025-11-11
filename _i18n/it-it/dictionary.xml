@@ -705,7 +705,6 @@
   <block id="71c7be202aa5492f058c76c96014b63b" category="paragraph"><block ref="fb5df87a9aa49fef6376b2c5fbd872f7" category="inline-link-macro-rx"></block>.</block>
   <block id="d1ce6a0a7c0c88afef0bcb3a4052d20f" category="paragraph"><block ref="7a62940b2cbfbe2f0f4e47d8680ba67c" category="inline-link-macro-rx"></block>.</block>
   <block id="fbbad2021b0a185cdad950acc088e8d4" category="doc">Supporto per la replica tra sistemi ONTAP locali e file system FSx per ONTAP</block>
-  <block id="6b3e3878a5fe9ddfda803127234f4a18" category="paragraph">La replica dei dati è disponibile tra un sistema ONTAP locale e un file system FSx for ONTAP da FSx for ONTAP all'interno della NetApp Console.</block>
   <block id="fed6a821ac698aa9a5bb359850dda501" category="paragraph">Per creare o gestire un file system FSx for ONTAP , è necessario aggiungere le credenziali AWS nella NetApp Console fornendo l'ARN di un ruolo IAM che fornisce le autorizzazioni necessarie per creare un sistema FSx for ONTAP dalla NetApp Console.</block>
   <block id="627148ff982de23897329c1203761c95" category="inline-link-macro">Scopri di più sui permessi</block>
   <block id="8917975c8444540f1ee9ac0cc5ca14cd" category="paragraph">Quando si aggiungono nuove credenziali per FSx for ONTAP da Storage in Workload Factory, è necessario decidere quali criteri di autorizzazione si desidera concedere.  Per scoprire risorse AWS come FSx per i file system ONTAP , avrai bisogno delle autorizzazioni di visualizzazione, pianificazione e analisi.  Per distribuire FSx per i file system ONTAP , sono necessarie le autorizzazioni di _creazione ed eliminazione del file system_.  È possibile eseguire operazioni di base per FSx per ONTAP senza autorizzazioni. <block ref="c61145cf60b5d306fe2b08006e1316ec" category="inline-link-macro-rx"></block>.</block>
@@ -716,4 +715,5 @@
   <block id="608f85440a5eadcbb4a9ce50bb7dda50" category="list-text">Per replicare i dati tra due file system FSx for ONTAP o tra un sistema ONTAP locale e un file system FSx for ONTAP , è necessario selezionare un agente Console con connettività al file system oppure accedere al file system per associare un collegamento.</block>
   <block id="5f72153c430537b3e27deff7329da0d0" category="list-text">Dalla pagina Sistemi NetApp Console , trascinare il file system FSx for ONTAP di origine o il sistema ONTAP locale sopra il file system FSx for ONTAP di destinazione e selezionare *Replica*.</block>
   <block id="1760c97f466ea374318a8c0bedcb2aff" category="section-title">11 novembre 2025</block>
+  <block id="1387404b18ce63590b24c55d54d3ff43" category="paragraph">La replica dei dati è disponibile tra un sistema ONTAP locale e un file system FSx for ONTAP dalla pagina Sistemi NetApp Console .</block>
 </blocks>
