@@ -238,6 +238,7 @@ Se in precedenza hai fornito le tue credenziali AWS nella NetApp Console, puoi r
 ====
 * Se selezioni un cluster senza nome, ti verrà chiesto di immettere un nome per il cluster.
 * Se si seleziona un cluster che non dispone delle credenziali necessarie per gestire il file system FSx for ONTAP dalla Console, verrà richiesto di selezionare le credenziali con le autorizzazioni richieste.
+* Le seguenti regioni non sono supportate per la scoperta: regioni Cina, regioni GovCloud (Stati Uniti), Secret Cloud e Top Secret Cloud.
 
 
 ====
