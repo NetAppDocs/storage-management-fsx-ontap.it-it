@@ -17,8 +17,6 @@
   <block id="67c7aeb67508aad4a1a5b35bdab67864" category="inline-link-macro">Scopri le funzionalità di FSx per ONTAP nella BlueXP workload factory</block>
   <block id="9043e597fd1a3537f95cd09a004d83dc" category="paragraph"><block ref="9043e597fd1a3537f95cd09a004d83dc" category="inline-link-macro-rx"></block></block>
   <block id="622ad6297367666ca450d994236cbc2d" category="paragraph">Se stai cercando l'opzione _visualizzazione avanzata_, che ti consente di gestire un file system FSx per ONTAP utilizzando ONTAP System Manager, ora puoi trovare tale opzione nell'area di lavoro BlueXP dopo aver selezionato l'ambiente di lavoro.</block>
-  <block id="50a397404296b3dd547fbabeb18e9092" category="inline-image-macro">Uno screenshot del pannello destro su BlueXP Canvas dopo aver selezionato un ambiente di lavoro che mostra l'opzione System Manager.</block>
-  <block id="66cff4f3970f46872862ee60b7f0a832" category="paragraph"><block ref="66cff4f3970f46872862ee60b7f0a832" category="inline-image-macro-rx" type="image"></block></block>
   <block id="16e305f77c7a0272aceac8c95312d98a" category="doc">NetApp rilascia ulteriori risorse CloudFormation</block>
   <block id="c043b3439543ebfc027a3c1fcb5613a5" category="paragraph">NetApp ora fornisce risorse CloudFormation che consentono ai clienti di utilizzare componenti ONTAP avanzati che non sono esposti nella console AWS.  CloudFormation è il meccanismo di infrastruttura come codice per AWS.  Potrai creare relazioni di replicazione, condivisioni CIFS, policy di esportazione NFS, snapshot e molto altro.</block>
   <block id="01d4e72c68c36e8905e55eeb7f8aff0c" category="inline-link-macro">Gestisci i file system Amazon FSx for NetApp ONTAP utilizzando CloudFormation</block>
@@ -176,7 +174,6 @@
   <block id="aeb31c9f8c311597856b129ab948b4e6" category="inline-link">NetApp Workload Factory</block>
   <block id="2c6d3a7f89afc9964121c1b114a56714" category="paragraph">Dalla pagina dei sistemi NetApp Console è possibile creare e individuare i sistemi FSx per ONTAP e utilizzare System Manager e altri servizi NetApp .  Se vuoi gestire i sistemi FSx for ONTAP e i carichi di lavoro in esecuzione su Amazon FSx for NetApp ONTAP, usa<block ref="fb3b6c773a24cacae7230400ab3161da" category="inline-link-rx"></block> .</block>
   <block id="0274c25cd39fea1cd6fb3e820df70e7f" category="inline-link-macro">Scopri come creare e scoprire i sistemi FSx per ONTAP dalla NetApp Console</block>
-  <block id="712fd65679ed31770d0f4093b25a23ea" category="paragraph"><block ref="a984d544f502f6adfd6ad6d305bf1f18" category="inline-link-macro-rx"></block> .</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">Caratteristiche</block>
   <block id="5e63cf07e8c4e2bc02fec4b907bfcc00" category="list-text">Non è necessario configurare o gestire dispositivi di archiviazione, software o backup.</block>
   <block id="e2ab7c65b21ed8cc1c3b642b5e36429e" category="inline-link">S3</block>
@@ -410,22 +407,11 @@
   <block id="3a75f5b58f8a8c79c73ac8b3f0785afe" category="list-text">Nella pagina Crea file system FSx per ONTAP , seleziona *Creazione rapida*.</block>
   <block id="f33ee1d7e309154be1fc329fad0ad653" category="paragraph">È anche possibile caricare una configurazione salvata.</block>
   <block id="7c6859274ee77ca082be3dcb424a440e" category="list-text">In Configurazione generale del file system, fornire quanto segue:</block>
-  <block id="3c3a97c5b5c26d61cb8559738fd7175e" category="list-text">*Credenziali AWS*: seleziona per aggiungere le credenziali AWS o continuare senza credenziali.  Senza credenziali, puoi copiare e scaricare il codice parzialmente completo da Codebox.  Il codice può essere utilizzato come modello in cui è possibile inserire le informazioni mancanti (ad esempio, le credenziali) o personalizzare determinati dati prima di eseguire il codice.</block>
   <block id="73834661f85b42765d73b7cd61d1475c" category="list-text">*Nome del file system*: immettere un nome per il file system.</block>
-  <block id="27db8fcb1cb750024f80a00d143ee777" category="list-text">*Topologia di distribuzione*: selezionare una topologia di distribuzione.</block>
-  <block id="e1db87892ddda8bfd0cc92dbf2aa8f28" category="list-text">Nella topologia scale-up, per la distribuzione dei dati viene utilizzato un file system, le cui dimensioni possono aumentare per adattarsi alla crescita dei dati.</block>
-  <block id="8dc86ca9377774615a191074143b0f0f" category="list-text">La topologia scale-out è quella in cui vengono utilizzati più file system per la distribuzione dei dati.</block>
-  <block id="a27de2368abb354633f8d50b9ea7e0a2" category="list-text">*Coppie HA*: immettere il numero di coppie HA.</block>
-  <block id="6aad0d457607a641d63a0daca3a0529a" category="list-text">Per le distribuzioni scale-up, è possibile avere una sola coppia HA.</block>
-  <block id="56dcdb97483e2b91ea46d0e3aed1e819" category="list-text">Per le distribuzioni scale-out, è possibile avere da due a dodici coppie HA.</block>
   <block id="f22c148b111a19f2c93bf5b1c1cbb2a6" category="list-text">*Tipo di distribuzione*: seleziona un tipo di distribuzione.</block>
-  <block id="7069a3965ec1f768679b31ddeea0b6e4" category="list-text">Distribuzione Single Availability Zone (Single-AZ): garantisce la disponibilità monitorando i guasti hardware e sostituendo automaticamente i componenti dell'infrastruttura in caso di guasto.  Raggiunge un'elevata durabilità replicando automaticamente i dati all'interno di una zona di disponibilità per proteggerli dai guasti dei componenti.</block>
-  <block id="8860331ce66022dce5b0f67e6c8398ab" category="list-text">Distribuzione di più zone di disponibilità (Multi-AZ): garantisce la disponibilità continua dei dati anche quando una zona di disponibilità non è disponibile.  I file system Multi-AZ supportano tutte le caratteristiche di disponibilità e durabilità dei file system Single-AZ.  Un file system Multi-AZ è progettato per carichi di lavoro di produzione critici per l'azienda che richiedono elevata disponibilità per i dati dei file ONTAP condivisi e necessitano di storage con replica integrata tra le zone di disponibilità.</block>
   <block id="a578dfdba57cca5b9cde80a5e42544c6" category="list-text">*Tag*: Facoltativamente, puoi aggiungere fino a 50 tag.</block>
-  <block id="2d65a0ce899e5ca708d5a1002a8d0a1d" category="list-text">In *Rete e sicurezza*, nel campo *Regione e VPC*, seleziona la regione e la VPC per il file system.</block>
   <block id="fced9e440363d93f4173eeec105848ba" category="list-text">In *Dettagli del file system*, fornire quanto segue:</block>
   <block id="6157c9c13988e3cea6397632d4ceff7e" category="list-text">*Capacità di archiviazione SSD*: immettere la capacità di archiviazione e selezionare l'unità di capacità di archiviazione.</block>
-  <block id="10a8fb0dbb0a921774745de198ad4068" category="list-text">* Credenziali ONTAP *: inserisci il tuo nome utente e la tua password ONTAP .</block>
   <block id="7966c6503cb79e36fabb3ff4e34bd3b0" category="list-text">*Configurazione SMB/CIFS*: Facoltativa.  Se si prevede di utilizzare il protocollo SMB/CIFS per accedere ai volumi, è necessario configurare Active Directory per la VM di archiviazione durante la creazione del file system.  Fornire i seguenti dettagli per la VM di archiviazione creata per questo file system.</block>
   <block id="e111b3a0a259872266237c202ec504ea" category="list-text">*Dominio Active Directory a cui unirsi*: immettere il nome di dominio completo (FQDN) per Active Directory.</block>
   <block id="40d5b51d14509b2edd0b3f2e2f7b4d16" category="list-text">*Indirizzi IP DNS*: immettere fino a tre indirizzi IP DNS separati da virgole.</block>
@@ -444,7 +430,6 @@
   <block id="6e4ae6aee9c2976cecc823f5d4e3d5db" category="paragraph">È possibile gestire i file system FSx for ONTAP in diversi modi, ad esempio da Workloads nella NetApp Console, utilizzando ONTAP System Manager e AWS CloudFormation. Scopri come <block ref="2dbcf252d35932131abc9de391694341" category="inline-link-macro-rx"></block> .</block>
   <block id="28cdc97b1969c0c544a77fde4457a7e5" category="open-title">Creazione avanzata</block>
   <block id="6805fd9faa6a9d49c19e9f0869323fd8" category="paragraph">Con la creazione avanzata puoi impostare tutte le opzioni di configurazione, tra cui disponibilità, sicurezza, backup e manutenzione.</block>
-  <block id="05d67c5923f1020ef47b7e3fb35cba6e" category="list-text">Nella pagina Crea FSx per ONTAP , seleziona *Creazione avanzata*.</block>
   <block id="cf8254c1af160e61f04022f6a69ab935" category="list-text">*Credenziali AWS*: seleziona per aggiungere le credenziali AWS in Workload Factory o continuare senza credenziali.</block>
   <block id="16babb73337008dc5c8f7dfa9f1a09b2" category="list-text">In Rete e sicurezza, fornisci quanto segue:</block>
   <block id="38ee1102173e9d9f4d6871edf96fc7fb" category="list-text">*Regione e VPC*: seleziona la regione e la VPC per il file system.</block>
@@ -456,9 +441,6 @@
   <block id="b98009df13b6a9c0bd5b540c1d2df378" category="list-text">*Intervallo di indirizzi IP dell'endpoint*: seleziona *Intervallo di indirizzi IP mobili al di fuori della tua VPC* oppure *Inserisci un intervallo di indirizzi IP* e inserisci un intervallo di indirizzi IP.</block>
   <block id="adf3b9421185cf4dc6b3d80fb9c26d9b" category="list-text">*Crittografia*: seleziona il nome della chiave di crittografia dal menu a discesa.</block>
   <block id="909443f15178d32af4981d109af80748" category="list-text">In Dettagli file system, fornire quanto segue:</block>
-  <block id="7af916ceff85ab2f29ca490366228701" category="list-text">*IOPS forniti*: selezionare *Automatico* o *Fornito dall'utente*.</block>
-  <block id="67d537df4a9c97aa749f6724139522f5" category="list-text">*Capacità di elaborazione per coppia HA*: seleziona la capacità di elaborazione per coppia HA.</block>
-  <block id="7e100ce6fb83954fbc242e5f5128907e" category="list-text">*Credenziali della VM di archiviazione*: inserisci il tuo nome utente.  La password può essere specifica per questo file system oppure è possibile utilizzare la stessa password immessa per le credenziali ONTAP .</block>
   <block id="31846199ab330eacea22764e7bc1ab7a" category="list-text">In Backup e manutenzione, fornire quanto segue:</block>
   <block id="5a7b83bad76b38a063667e0b80bd78d6" category="list-text">*FSx per backup ONTAP *: i backup automatici giornalieri sono abilitati per impostazione predefinita.  Disattivare se lo si desidera.</block>
   <block id="f009614070b8aab7ff6edcea9473b3dc" category="list-text">*Periodo di conservazione dei backup automatici*: immettere il numero di giorni per cui conservare i backup automatici.</block>
@@ -723,4 +705,28 @@
   <block id="61b7909f43b8222037001004e52dc71c" category="paragraph"><block ref="61b7909f43b8222037001004e52dc71c" category="inline-link-macro-rx"></block></block>
   <block id="b566b4df138c2254f68b7631cba29c1d" category="section-title">17 novembre 2025</block>
   <block id="e581684dcb328343d1f63d6cb9035ad9" category="list-text">Le seguenti regioni non sono supportate per la scoperta: regioni Cina, regioni GovCloud (Stati Uniti), Secret Cloud e Top Secret Cloud.</block>
+  <block id="2f41edd6a40030a5b9782bbc67a56e19" category="paragraph"><block ref="eee6c8a030ab87fecfce06e7212b64da" category="inline-link-macro-rx"></block>.</block>
+  <block id="cf5df8345ca5f203e0f805460b558155" category="list-text">Distribuzione Single Availability Zone (Single-AZ): garantisce la disponibilità monitorando i guasti hardware e sostituendo automaticamente i componenti dell'infrastruttura in caso di guasto. Raggiunge un'elevata durabilità replicando automaticamente i dati all'interno di una zona di disponibilità per proteggerli dai guasti dei componenti.</block>
+  <block id="cc7023e1e70f83f63ba0c94135b83c2d" category="paragraph">Questa configurazione è consigliata per carichi di lavoro ad alte prestazioni o quando i carichi di lavoro iniziano in piccolo e aumentano gradualmente fino a 72 GB/s di throughput e 2,4 milioni di IOPS.</block>
+  <block id="ce920fde7af8f67cbfd1ca3e8efd6b91" category="list-text">Distribuzione di più zone di disponibilità (Multi-AZ): garantisce la disponibilità continua dei dati anche quando una zona di disponibilità non è disponibile. Un file system Multi-AZ è progettato per carichi di lavoro di produzione critici per l'azienda che richiedono elevata disponibilità per i dati dei file ONTAP condivisi e necessitano di storage con replica integrata tra le zone di disponibilità.</block>
+  <block id="fc22ff32bfac4486f50da9af2033830e" category="paragraph">Questa configurazione con una singola coppia HA è consigliata per carichi di lavoro che richiedono fino a 6 GB/s di throughput o 200.000 IOPS.</block>
+  <block id="87839b96284704d104c8e445d0cfb887" category="list-text">Per le distribuzioni di prima generazione, non è possibile ridurre la capacità dopo la creazione del file system.</block>
+  <block id="8d4ad9a0aaca41b1aa7122cb909588a7" category="list-text">Per le distribuzioni di seconda generazione, è possibile aumentare la capacità dopo la creazione del file system.</block>
+  <block id="02f2e108af721f7fc825883d8811e77a" category="list-text">* Credenziali ONTAP *: Facoltativo. Inserisci il tuo nome utente e la tua password ONTAP . La password può essere impostata subito o in un secondo momento.</block>
+  <block id="824994853534784eb4495b892e13b1c6" category="paragraph">Se l'utente fornito non è l'utente fsxadmin e in seguito è necessario reimpostare la password di fsxadmin, sarà possibile farlo dalla console AWS.</block>
+  <block id="6e9c833800dbc4ebe142052809560480" category="list-text">Nella pagina Crea file system FSx per ONTAP , seleziona *Creazione avanzata*.</block>
+  <block id="9f9382d36e2904b74545777af65bb3d2" category="list-text">*Tipo di distribuzione*: seleziona un tipo di distribuzione e una generazione di file system. La disponibilità di un file system di seconda generazione dipende dalla regione selezionata. Se la regione selezionata non supporta i file system FSx per ONTAP di seconda generazione, il tipo di distribuzione passa alla prima generazione.</block>
+  <block id="ad25ffa35c681232ceeec02144315aa5" category="paragraph">*Generazione del file system*: selezionare una delle seguenti opzioni:</block>
+  <block id="19f3a3d53bb0ae9a377ecb1e961d2155" category="list-text">*Seconda generazione*: questa configurazione è consigliata per carichi di lavoro ad alte prestazioni o quando i carichi di lavoro iniziano in piccolo e aumentano gradualmente fino a 72 GB/s di throughput e 2,4 milioni di IOPS.</block>
+  <block id="272021095e67d1fdf73f94aa211e4e56" category="list-text">*Prima generazione*: questa configurazione è ideale per carichi di lavoro che richiedono fino a 4 GB/s o 160.000 IOPS. I file system di prima generazione possono solo aumentare la capacità.</block>
+  <block id="5ee057335585da70af1caca368e4e422" category="list-text">*Seconda generazione*: questa configurazione con una singola coppia HA è consigliata per carichi di lavoro che richiedono fino a 6 GB/s di throughput o 200.000 IOPS. In un file system Multi-AZ e di seconda generazione, la capacità può aumentare o diminuire in base alle esigenze del carico di lavoro.</block>
+  <block id="7ef603b4e7f8efb6252e42ef0745f9cc" category="list-text">Per le distribuzioni di seconda generazione, è possibile regolare la capacità.</block>
+  <block id="6eb76be6a5409fb6f547e3cf3944cfe6" category="list-text">*Capacità di elaborazione per coppia HA*: seleziona la capacità di elaborazione per numero di coppie HA. I file system di prima generazione supportano solo una coppia HA.</block>
+  <block id="ee6e43b0904c4672da5651009001b259" category="list-text">*IOPS forniti*: selezionare una delle seguenti opzioni:</block>
+  <block id="2c8c409e84df8a5368e9fc203dacd0e0" category="list-text">*Automatico*: per l'impostazione automatica, per ogni GiB creato vengono aggiunti 3 IOPS.</block>
+  <block id="080138c9fde9abc63b7003839106198b" category="list-text">*Provisioning utente*: per il provisioning utente, immettere il valore IOPS.</block>
+  <block id="dd34b811cd079417f985f8f56a4f1dca" category="list-text">*Credenziali della VM di archiviazione*: facoltative. Inserisci il tuo nome utente. La password può essere specifica per questo file system oppure è possibile utilizzare la stessa password immessa per le credenziali ONTAP . La password può essere impostata subito o in un secondo momento.</block>
+  <block id="4f1bd0ace83aba374b7ff69066a53c58" category="inline-xref">dettagli del gruppo di sicurezza</block>
+  <block id="e41bac724f43b475f854e3aa1664b8de" category="paragraph">Per un nuovo gruppo di sicurezza, fare riferimento a <block ref="592b894db662c6a6a8229aea3f9a37fa" category="inline-xref-macro-rx"></block> per una descrizione dei protocolli, delle porte e dei ruoli del gruppo di sicurezza.</block>
+  <block id="0ebb1380b6abc3243f8c020aa97f25da" category="list-text">Salvare o creare il file system. .Risultato</block>
 </blocks>

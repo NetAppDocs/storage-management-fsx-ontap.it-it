@@ -57,34 +57,36 @@ La creazione rapida consente di utilizzare una configurazione consigliata basata
 
 . In Configurazione generale del file system, fornire quanto segue:
 +
-.. *Credenziali AWS*: seleziona per aggiungere le credenziali AWS o continuare senza credenziali.  Senza credenziali, puoi copiare e scaricare il codice parzialmente completo da Codebox.  Il codice può essere utilizzato come modello in cui è possibile inserire le informazioni mancanti (ad esempio, le credenziali) o personalizzare determinati dati prima di eseguire il codice.
+.. *Credenziali AWS*: seleziona per aggiungere le credenziali AWS in Workload Factory o continuare senza credenziali.
 .. *Nome del file system*: immettere un nome per il file system.
-.. *Topologia di distribuzione*: selezionare una topologia di distribuzione.
-+
-*** Nella topologia scale-up, per la distribuzione dei dati viene utilizzato un file system, le cui dimensioni possono aumentare per adattarsi alla crescita dei dati.
-*** La topologia scale-out è quella in cui vengono utilizzati più file system per la distribuzione dei dati.
-
-
-.. *Coppie HA*: immettere il numero di coppie HA.
-+
-*** Per le distribuzioni scale-up, è possibile avere una sola coppia HA.
-*** Per le distribuzioni scale-out, è possibile avere da due a dodici coppie HA.
-
-
+.. *Regione e VPC*: seleziona la regione e la VPC per il file system.
 .. *Tipo di distribuzione*: seleziona un tipo di distribuzione.
 +
-*** Distribuzione Single Availability Zone (Single-AZ): garantisce la disponibilità monitorando i guasti hardware e sostituendo automaticamente i componenti dell'infrastruttura in caso di guasto.  Raggiunge un'elevata durabilità replicando automaticamente i dati all'interno di una zona di disponibilità per proteggerli dai guasti dei componenti.
-*** Distribuzione di più zone di disponibilità (Multi-AZ): garantisce la disponibilità continua dei dati anche quando una zona di disponibilità non è disponibile.  I file system Multi-AZ supportano tutte le caratteristiche di disponibilità e durabilità dei file system Single-AZ.  Un file system Multi-AZ è progettato per carichi di lavoro di produzione critici per l'azienda che richiedono elevata disponibilità per i dati dei file ONTAP condivisi e necessitano di storage con replica integrata tra le zone di disponibilità.
+*** Distribuzione Single Availability Zone (Single-AZ): garantisce la disponibilità monitorando i guasti hardware e sostituendo automaticamente i componenti dell'infrastruttura in caso di guasto. Raggiunge un'elevata durabilità replicando automaticamente i dati all'interno di una zona di disponibilità per proteggerli dai guasti dei componenti.
++
+Questa configurazione è consigliata per carichi di lavoro ad alte prestazioni o quando i carichi di lavoro iniziano in piccolo e aumentano gradualmente fino a 72 GB/s di throughput e 2,4 milioni di IOPS.
+
+*** Distribuzione di più zone di disponibilità (Multi-AZ): garantisce la disponibilità continua dei dati anche quando una zona di disponibilità non è disponibile. Un file system Multi-AZ è progettato per carichi di lavoro di produzione critici per l'azienda che richiedono elevata disponibilità per i dati dei file ONTAP condivisi e necessitano di storage con replica integrata tra le zone di disponibilità.
++
+Questa configurazione con una singola coppia HA è consigliata per carichi di lavoro che richiedono fino a 6 GB/s di throughput o 200.000 IOPS.
+
 
 
 .. *Tag*: Facoltativamente, puoi aggiungere fino a 50 tag.
 
 
-. In *Rete e sicurezza*, nel campo *Regione e VPC*, seleziona la regione e la VPC per il file system.
 . In *Dettagli del file system*, fornire quanto segue:
 +
 .. *Capacità di archiviazione SSD*: immettere la capacità di archiviazione e selezionare l'unità di capacità di archiviazione.
-.. * Credenziali ONTAP *: inserisci il tuo nome utente e la tua password ONTAP .
++
+*** Per le distribuzioni di prima generazione, non è possibile ridurre la capacità dopo la creazione del file system.
+*** Per le distribuzioni di seconda generazione, è possibile aumentare la capacità dopo la creazione del file system.
+
+
+.. * Credenziali ONTAP *: Facoltativo. Inserisci il tuo nome utente e la tua password ONTAP . La password può essere impostata subito o in un secondo momento.
++
+Se l'utente fornito non è l'utente fsxadmin e in seguito è necessario reimpostare la password di fsxadmin, sarà possibile farlo dalla console AWS.
+
 .. *Configurazione SMB/CIFS*: Facoltativa.  Se si prevede di utilizzare il protocollo SMB/CIFS per accedere ai volumi, è necessario configurare Active Directory per la VM di archiviazione durante la creazione del file system.  Fornire i seguenti dettagli per la VM di archiviazione creata per questo file system.
 +
 ... *Dominio Active Directory a cui unirsi*: immettere il nome di dominio completo (FQDN) per Active Directory.
@@ -125,7 +127,7 @@ Con la creazione avanzata puoi impostare tutte le opzioni di configurazione, tra
 . Dal menu NetApp Console , selezionare *Storage* e quindi *Gestione*.
 . Selezionare *Aggiungi sistema* dalla pagina Sistemi.
 . Selezionare *Amazon Web Services* come posizione, quindi selezionare *Aggiungi nuovo* per Amazon FSx for NetApp ONTAP.
-. Nella pagina Crea FSx per ONTAP , seleziona *Creazione avanzata*.
+. Nella pagina Crea file system FSx per ONTAP , seleziona *Creazione avanzata*.
 +
 È anche possibile caricare una configurazione salvata.
 
@@ -133,49 +135,52 @@ Con la creazione avanzata puoi impostare tutte le opzioni di configurazione, tra
 +
 .. *Credenziali AWS*: seleziona per aggiungere le credenziali AWS in Workload Factory o continuare senza credenziali.
 .. *Nome del file system*: immettere un nome per il file system.
-.. *Topologia di distribuzione*: selezionare una topologia di distribuzione.
+.. *Regione e VPC*: seleziona la regione e la VPC per il file system.
+.. *Tipo di distribuzione*: seleziona un tipo di distribuzione e una generazione di file system. La disponibilità di un file system di seconda generazione dipende dalla regione selezionata. Se la regione selezionata non supporta i file system FSx per ONTAP di seconda generazione, il tipo di distribuzione passa alla prima generazione.
 +
-*** Nella topologia scale-up, per la distribuzione dei dati viene utilizzato un file system, le cui dimensioni possono aumentare per adattarsi alla crescita dei dati.
-*** La topologia scale-out è quella in cui vengono utilizzati più file system per la distribuzione dei dati.
-
-
-.. *Coppie HA*: immettere il numero di coppie HA.
+*** Distribuzione Single Availability Zone (Single-AZ): garantisce la disponibilità monitorando i guasti hardware e sostituendo automaticamente i componenti dell'infrastruttura in caso di guasto. Raggiunge un'elevata durabilità replicando automaticamente i dati all'interno di una zona di disponibilità per proteggerli dai guasti dei componenti.
 +
-*** Per le distribuzioni scale-up, è possibile avere una sola coppia HA.
-*** Per le distribuzioni scale-out, è possibile avere da due a dodici coppie HA.
+*Generazione del file system*: selezionare una delle seguenti opzioni:
 
-
-.. *Tipo di distribuzione*: seleziona un tipo di distribuzione.
 +
-*** Distribuzione Single Availability Zone (Single-AZ): garantisce la disponibilità monitorando i guasti hardware e sostituendo automaticamente i componenti dell'infrastruttura in caso di guasto.  Raggiunge un'elevata durabilità replicando automaticamente i dati all'interno di una zona di disponibilità per proteggerli dai guasti dei componenti.
-*** Distribuzione di più zone di disponibilità (Multi-AZ): garantisce la disponibilità continua dei dati anche quando una zona di disponibilità non è disponibile.  I file system Multi-AZ supportano tutte le caratteristiche di disponibilità e durabilità dei file system Single-AZ.  Un file system Multi-AZ è progettato per carichi di lavoro di produzione critici per l'azienda che richiedono elevata disponibilità per i dati dei file ONTAP condivisi e necessitano di storage con replica integrata tra le zone di disponibilità.
+**** *Seconda generazione*: questa configurazione è consigliata per carichi di lavoro ad alte prestazioni o quando i carichi di lavoro iniziano in piccolo e aumentano gradualmente fino a 72 GB/s di throughput e 2,4 milioni di IOPS.
+**** *Prima generazione*: questa configurazione è ideale per carichi di lavoro che richiedono fino a 4 GB/s o 160.000 IOPS. I file system di prima generazione possono solo aumentare la capacità.
+
+
+*** Distribuzione di più zone di disponibilità (Multi-AZ): garantisce la disponibilità continua dei dati anche quando una zona di disponibilità non è disponibile. Un file system Multi-AZ è progettato per carichi di lavoro di produzione critici per l'azienda che richiedono elevata disponibilità per i dati dei file ONTAP condivisi e necessitano di storage con replica integrata tra le zone di disponibilità.
++
+*Generazione del file system*: selezionare una delle seguenti opzioni:
+
++
+**** *Seconda generazione*: questa configurazione con una singola coppia HA è consigliata per carichi di lavoro che richiedono fino a 6 GB/s di throughput o 200.000 IOPS. In un file system Multi-AZ e di seconda generazione, la capacità può aumentare o diminuire in base alle esigenze del carico di lavoro.
+**** *Prima generazione*: questa configurazione è ideale per carichi di lavoro che richiedono fino a 4 GB/s o 160.000 IOPS. I file system di prima generazione possono solo aumentare la capacità.
+
+
 
 
 .. *Tag*: Facoltativamente, puoi aggiungere fino a 50 tag.
 
 
-. In Rete e sicurezza, fornisci quanto segue:
-+
-.. *Regione e VPC*: seleziona la regione e la VPC per il file system.
-.. *Gruppo di sicurezza*: crea o utilizza un gruppo di sicurezza esistente.
-.. *Zone di disponibilità*: seleziona le zone di disponibilità e le subnet.
-+
-*** Per il nodo 1 della configurazione del cluster: selezionare una zona di disponibilità e una subnet.
-*** Per il nodo 2 della configurazione del cluster: selezionare una zona di disponibilità e una subnet.
-
-
-.. *Tabelle di routing VPC*: seleziona la tabella di routing VPC per consentire l'accesso client ai volumi.
-.. *Intervallo di indirizzi IP dell'endpoint*: seleziona *Intervallo di indirizzi IP mobili al di fuori della tua VPC* oppure *Inserisci un intervallo di indirizzi IP* e inserisci un intervallo di indirizzi IP.
-.. *Crittografia*: seleziona il nome della chiave di crittografia dal menu a discesa.
-
-
 . In Dettagli file system, fornire quanto segue:
 +
 .. *Capacità di archiviazione SSD*: immettere la capacità di archiviazione e selezionare l'unità di capacità di archiviazione.
-.. *IOPS forniti*: selezionare *Automatico* o *Fornito dall'utente*.
-.. *Capacità di elaborazione per coppia HA*: seleziona la capacità di elaborazione per coppia HA.
-.. * Credenziali ONTAP *: inserisci il tuo nome utente e la tua password ONTAP .
-.. *Credenziali della VM di archiviazione*: inserisci il tuo nome utente.  La password può essere specifica per questo file system oppure è possibile utilizzare la stessa password immessa per le credenziali ONTAP .
++
+*** Per le distribuzioni di prima generazione, non è possibile ridurre la capacità dopo la creazione del file system.
+*** Per le distribuzioni di seconda generazione, è possibile regolare la capacità.
+
+
+.. *Capacità di elaborazione per coppia HA*: seleziona la capacità di elaborazione per numero di coppie HA. I file system di prima generazione supportano solo una coppia HA.
+.. *IOPS forniti*: selezionare una delle seguenti opzioni:
++
+*** *Automatico*: per l'impostazione automatica, per ogni GiB creato vengono aggiunti 3 IOPS.
+*** *Provisioning utente*: per il provisioning utente, immettere il valore IOPS.
+
+
+.. * Credenziali ONTAP *: Facoltativo. Inserisci il tuo nome utente e la tua password ONTAP . La password può essere impostata subito o in un secondo momento.
++
+Se l'utente fornito non è l'utente fsxadmin e in seguito è necessario reimpostare la password di fsxadmin, sarà possibile farlo dalla console AWS.
+
+.. *Credenziali della VM di archiviazione*: facoltative. Inserisci il tuo nome utente. La password può essere specifica per questo file system oppure è possibile utilizzare la stessa password immessa per le credenziali ONTAP . La password può essere impostata subito o in un secondo momento.
 .. *Configurazione SMB/CIFS*: Facoltativa.  Se si prevede di utilizzare il protocollo SMB/CIFS per accedere ai volumi, è necessario configurare Active Directory per la VM di archiviazione durante la creazione del file system.  Fornire i seguenti dettagli per la VM di archiviazione creata per questo file system.
 +
 ... *Dominio Active Directory a cui unirsi*: immettere il nome di dominio completo (FQDN) per Active Directory.
@@ -198,21 +203,37 @@ Se ti stai unendo a un AD autogestito, usa il nome del gruppo nel tuo AD.  Il gr
 
 
 
+. In Rete e sicurezza, fornisci quanto segue:
++
+.. *Gruppo di sicurezza*: crea o utilizza un gruppo di sicurezza esistente.
++
+Per un nuovo gruppo di sicurezza, fare riferimento a <<Security group details,dettagli del gruppo di sicurezza>> per una descrizione dei protocolli, delle porte e dei ruoli del gruppo di sicurezza.
+
+.. *Zone di disponibilità*: seleziona le zone di disponibilità e le subnet.
++
+*** Per il nodo 1 della configurazione del cluster: selezionare una zona di disponibilità e una subnet.
+*** Per il nodo 2 della configurazione del cluster: selezionare una zona di disponibilità e una subnet.
+
+
+.. *Tabelle di routing VPC*: seleziona la tabella di routing VPC per consentire l'accesso client ai volumi.
+.. *Intervallo di indirizzi IP dell'endpoint*: seleziona *Intervallo di indirizzi IP mobili al di fuori della tua VPC* oppure *Inserisci un intervallo di indirizzi IP* e inserisci un intervallo di indirizzi IP.
+.. *Crittografia*: seleziona il nome della chiave di crittografia dal menu a discesa.
+
+
 . In Backup e manutenzione, fornire quanto segue:
 +
 .. *FSx per backup ONTAP *: i backup automatici giornalieri sono abilitati per impostazione predefinita.  Disattivare se lo si desidera.
 +
 ... *Periodo di conservazione dei backup automatici*: immettere il numero di giorni per cui conservare i backup automatici.
 ... *Finestra di backup automatico giornaliero*: seleziona *Nessuna preferenza* (viene selezionato automaticamente un orario di inizio per il backup giornaliero) oppure *Seleziona l'orario di inizio per i backup giornalieri* e specifica un orario di inizio.
-... *Finestra di manutenzione settimanale*: seleziona *Nessuna preferenza* (viene selezionato automaticamente un orario di inizio per la finestra di manutenzione settimanale) oppure *Seleziona l'orario di inizio per la finestra di manutenzione settimanale di 30 minuti* e specifica un orario di inizio.
 
 
+.. *Finestra di manutenzione settimanale*: seleziona *Nessuna preferenza* (viene selezionato automaticamente un orario di inizio per la finestra di manutenzione settimanale) oppure *Seleziona l'orario di inizio per la finestra di manutenzione settimanale di 30 minuti* e specifica un orario di inizio.
 
 
-. Salvare o creare il file system.
+. Salvare o creare il file system. .Risultato
 
 
-.Risultato
 Se hai creato il file system, la nuova configurazione di FSx per ONTAP viene visualizzata nella pagina Sistemi.
 
 È possibile gestire i file system FSx for ONTAP in diversi modi, ad esempio da Workloads nella NetApp Console, utilizzando ONTAP System Manager e AWS CloudFormation. Scopri come link:task-manage-fsx-systems.html["gestire un file system FSx per ONTAP"] .
