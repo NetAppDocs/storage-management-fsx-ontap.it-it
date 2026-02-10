@@ -29,6 +29,8 @@ sidebar:
       url: "/use/task-create-fsx-system.html"
   - title: Gestire un file system FSx per ONTAP
     url: "/use/task-manage-fsx-systems.html"
+  - title: Replicare i dati
+    url: "/use/task-replicate-data.html"
   - title: Monitora le operazioni con Tracker
     url: "/use/task-monitor-operations.html"
   - title: Rimuovere un file system da un progetto
