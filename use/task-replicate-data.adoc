@@ -57,8 +57,6 @@ Per migrare i dati e le impostazioni di configurazione della storage VM, è nece
 . <<Cut over replication per casi d'uso di migrazione,Cut over replication per casi d'uso di migrazione>> per migrare in modo permanente dati e impostazioni di configurazione dal file system di origine al file system FSx for ONTAP di destinazione.
 
 
-Per utilizzare questa funzionalità, creare un
-
 
 
 == Creare una relazione di replicazione
@@ -82,6 +80,7 @@ Rivedi questi requisiti prima di iniziare.
 .. *Nome destinazione*: hai applicato il nome destinazione quando hai trascinato e rilasciato il sistema storage di origine sul sistema di destinazione nella pagina Console Systems.
 .. *Caso d'uso*: selezionare uno dei seguenti casi d'uso per la replica.  A seconda del caso d'uso selezionato, Workload Factory compila il modulo con i valori consigliati in conformità con le best practice.  È possibile accettare i valori consigliati o apportare modifiche durante la compilazione del modulo.
 +
+*** Intelligenza artificiale (AI) e machine learning (ML): replica i tuoi dati ONTAP on-premises su Amazon FSx for NetApp ONTAP e crea punti di accesso S3 per supportare l’addestramento di AI e ML nel cloud
 *** Migrazione: trasferisce i dati al file system FSx for ONTAP di destinazione
 +
 *Replica configurazione VM di storage*: facoltativamente, seleziona per replicare i dati e le impostazioni di configurazione della VM di storage per una singola VM di storage. Quando si migrano dati e impostazioni di configurazione simultaneamente, assicurati che l'ultima replica per il volume sia stata completata nelle ultime 24 ore. Tutti i volumi nella stessa VM di storage devono essere selezionati per utilizzare questa funzionalità. La policy di tiering per tutti i volumi predefinita è quella del volume di origine, che è consigliata per i casi d'uso di migrazione.
@@ -154,7 +153,7 @@ NOTE: Per una conservazione a lungo termine è necessario che le etichette di or
 *** *Utente*: Seleziona un utente esistente con accesso al volume o crea un nuovo utente.
 *** *Tipo di utente*: seleziona *UNIX* o *Windows* come tipo di utente.
 *** *Configurazione di rete*: seleziona *Internet* o *Virtual private cloud (VPC)*. Il tipo di rete scelto determina se il punto di accesso è accessibile da Internet o limitato a una VPC specifica.
-*** *Abilita metadati*: l'abilitazione dei metadati crea una tabella S3 contenente tutti gli oggetti accessibili dal punto di accesso S3, che puoi utilizzare per auditing, governance, analisi automatica e ottimizzazione. L'abilitazione dei metadati comporta costi AWS aggiuntivi. Consulta link:https://aws.amazon.com/s3/pricing/["Documentazione sui prezzi di Amazon S3"^] per ulteriori informazioni.
+*** *Abilita tabella inventario*: quando si abilita la tabella inventario sul volume, il sistema genera metadati per tutti gli oggetti accessibili al punto di accesso S3 e comporta costi di richiesta AWS S3. Consultare link:https://aws.amazon.com/s3/pricing/["Documentazione sui prezzi di Amazon S3"^] per ulteriori informazioni.
 
 
 .. *Tag del punto di accesso S3*: Facoltativamente, puoi aggiungere fino a 50 tag.
