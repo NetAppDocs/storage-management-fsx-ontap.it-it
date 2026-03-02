@@ -791,4 +791,7 @@
   <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">16 febbraio 2026</block>
   <block id="498aaff0cc400a96455ebb5b21ae7ffa" category="paragraph">Per utilizzare questa funzionalità, <block ref="a00423c4266b8832da7ddbc75235d0cb" category="inline-link-macro-rx"></block> e selezionare *Migrazione* come caso d'uso. Per completare il processo di migrazione, è necessario <block ref="26b59663dcf673cfcdf7f1e6b23597f9" category="inline-link-macro-rx"></block> immediatamente per migrare in modo permanente i dati e le impostazioni di configurazione della storage VM nel file system FSx for ONTAP di destinazione.</block>
   <block id="df319eebb5e9e4cde194e1e976bf0795" category="list-text"><block ref="7a9cdee14fa6d629f0d48ed18525f6a5" category="inline-xref-macro-rx"></block> per migrare in modo permanente dati e impostazioni di configurazione dal file system di origine al file system FSx for ONTAP di destinazione.</block>
+  <block id="3acecbd4317d789f549785c17e6afb2c" category="doc">NetApp Console stato dell'agente supportato per i file system FSx for ONTAP</block>
+  <block id="5088f4e07e6650891b34cd38ec19877b" category="paragraph">NetApp Console ora mostra lo stato dell'agente Console per i file system FSx for ONTAP in Workloads. Lo stato indica se l'agente è in esecuzione e in grado di comunicare con il file system FSx for ONTAP. Queste informazioni possono aiutarti a risolvere i problemi di connettività.</block>
+  <block id="4aa1f4ce7ff97e69b143fbe399631234" category="section-title">01 marzo 2026</block>
 </blocks>
