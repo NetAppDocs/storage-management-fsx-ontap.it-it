@@ -29,7 +29,7 @@ Se si replica un volume sorgente con file immutabili, il volume di destinazione 
 
 [NOTE]
 ====
-È possibile replicare un volume sorgente (read/write) o un volume di protezione dati (DP). La replica a cascata è supportata, ma un terzo hop non lo è. Scopri di più su link:https://review.docs.netapp.com/us-en/workload-fsx-ontap_cascade-replication/cascade-replication.html["replicazione a cascata"^].
+È possibile replicare un volume sorgente (read/write) o un volume di protezione dati (DP). La replica a cascata è supportata, ma un terzo hop non lo è. Scopri di più su link:https://docs.netapp.com/us-en/workload-fsx-ontap/cascade-replication.html["replicazione a cascata"^].
 
 ====
 
