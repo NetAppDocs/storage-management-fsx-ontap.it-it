@@ -18,6 +18,7 @@ Per creare o gestire un file system FSx for ONTAP , è necessario aggiungere le 
 
 
 
+[[why-aws-credentials-are-required]]
 == Perché sono richieste le credenziali AWS
 
 Per creare e gestire i sistemi FSx for ONTAP dalla NetApp Console, sono necessarie le credenziali AWS. È possibile creare nuove credenziali o aggiungerle a un'organizzazione esistente. Le credenziali consentono di gestire le risorse AWS dalla NetApp Console.
@@ -26,6 +27,7 @@ Le credenziali e le autorizzazioni sono gestite da NetApp Workload Factory. Work
 
 
 
+[[about-this-task]]
 == Informazioni su questo compito
 
 Quando si aggiungono nuove credenziali per FSx for ONTAP da Storage in Workload Factory, è necessario decidere quali criteri di autorizzazione si desidera concedere.  Per scoprire risorse AWS come FSx per i file system ONTAP , avrai bisogno delle autorizzazioni di visualizzazione, pianificazione e analisi.  Per distribuire FSx per i file system ONTAP , sono necessarie le autorizzazioni di _creazione ed eliminazione del file system_.  È possibile eseguire operazioni di base per FSx per ONTAP senza autorizzazioni. link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Scopri di più sui permessi"].
@@ -42,6 +44,7 @@ image:screenshot-netapp-console-administration-credentials.png["Uno screenshot d
 
 
 
+[[add-credentials-to-an-account-manually]]
 == Aggiungere manualmente le credenziali a un account
 
 È possibile aggiungere manualmente le credenziali AWS alla NetApp Console per concedere al proprio account le autorizzazioni necessarie per gestire le funzionalità del carico di lavoro desiderate e un ruolo IAM assegnato all'account.
@@ -67,6 +70,7 @@ Per accedere al tuo account AWS dovrai disporre delle credenziali.
 
 
 
+[[step-1-select-the-storage-capability-and-create-the-iam-policy]]
 === Passaggio 1: selezionare la capacità di archiviazione e creare il criterio IAM
 
 In questa sezione, sceglierai la funzionalità di archiviazione da gestire con queste credenziali e le autorizzazioni per l'archiviazione. Hai anche la possibilità di selezionare altri carichi di lavoro come Databases, GenAI o VMware. Una volta effettuate le selezioni, dovrai copiare le autorizzazioni delle policy per ciascun carico di lavoro selezionato da Codebox e aggiungerle nella AWS Management Console all'interno del tuo account AWS per creare le policy.
@@ -88,6 +92,7 @@ In questa sezione, sceglierai la funzionalità di archiviazione da gestire con q
 
 
 
+[[step-2-create-the-iam-role-that-uses-the-policies]]
 === Passaggio 2: creare il ruolo IAM che utilizza i criteri
 
 In questa sezione configurerai un ruolo IAM che Workload Factory assumerà e che include le autorizzazioni e i criteri appena creati.
@@ -109,6 +114,7 @@ In questa sezione configurerai un ruolo IAM che Workload Factory assumerà e che
 
 
 
+[[step-3-enter-a-name-and-add-the-credentials]]
 === Passaggio 3: inserisci un nome e aggiungi le credenziali
 
 L'ultimo passaggio consiste nell'inserire un nome per le credenziali.
@@ -124,6 +130,7 @@ La console crea le credenziali e le visualizza nella pagina Credenziali. È poss
 
 
 
+[[add-credentials-to-an-account-using-cloudformation]]
 == Aggiungere credenziali a un account utilizzando CloudFormation
 
 È possibile aggiungere le credenziali AWS a NetApp Workload Factory utilizzando uno stack AWS CloudFormation selezionando le funzionalità di carico di lavoro che si desidera utilizzare e quindi avviando lo stack AWS CloudFormation nel proprio account AWS. CloudFormation creerà le policy IAM e il ruolo IAM in base alle funzionalità di carico di lavoro selezionate.

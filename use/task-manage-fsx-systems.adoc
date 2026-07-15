@@ -18,6 +18,7 @@ Dopo aver creato o individuato un sistema FSx for ONTAP nella NetApp Console, è
 
 
 
+[[manage-a-file-system-using-netapp-workload-factory]]
 == Gestire un file system utilizzando NetApp Workload Factory
 
 Quando si apre un sistema FSx for ONTAP dalla pagina Sistemi della NetApp Console, si viene indirizzati a NetApp Workload Factory. NetApp Workload Factory è un servizio intelligente di ottimizzazione e automazione che utilizza le migliori pratiche del settore per pianificare, predisporre e gestire i carichi di lavoro principali utilizzando Amazon FSx for NetApp ONTAP.
@@ -26,6 +27,7 @@ https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Scopri come gestire
 
 
 
+[[manage-a-file-system-using-ontap-system-manager]]
 == Gestire un file system utilizzando ONTAP System Manager
 
 È possibile gestire un file system FSx per ONTAP direttamente dalla Console utilizzando l'interfaccia ONTAP System Manager. Per utilizzare System Manager è necessario un agente Console o un collegamento AWS Lambda.
@@ -34,6 +36,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["Scopr
 
 
 
+[[manage-a-file-system-using-amazon-cloudformation]]
 == Gestisci un file system utilizzando Amazon CloudFormation
 
 È possibile effettuare il provisioning e gestire le risorse del file system FSx for ONTAP (volumi, condivisioni CIFS, policy di esportazione e altro) utilizzando Amazon CloudFormation.
@@ -42,12 +45,14 @@ link:https://github.com/NetApp/NetApp-CloudFormation-FSx-ONTAP-provider["Reposit
 
 
 
+[[use-netapp-data-services-with-a-file-system]]
 == Utilizzare i servizi dati NetApp con un file system
 
 Utilizza i servizi dati NetApp con i tuoi file system FSx for ONTAP per eseguire il backup e il ripristino dei dati, trasferire e sincronizzare i dati, analizzare e classificare i dati, replicare i dati e velocizzare l'accesso o scaricare il traffico.
 
 
 
+[[back-up-and-recover-your-data]]
 === Esegui il backup e il ripristino dei tuoi dati
 
 NetApp Backup and Recovery offre una protezione dei dati efficiente, sicura e conveniente per i dati, i database e le macchine virtuali NetApp ONTAP , sia in locale che nel cloud.
@@ -56,6 +61,7 @@ link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["Ini
 
 
 
+[[transfer-and-synchronize-data]]
 === Trasferisci e sincronizza i dati
 
 NetApp Copy and Sync è un servizio di replicazione e sincronizzazione cloud per il trasferimento di dati NAS tra archivi di oggetti locali e cloud.
@@ -64,6 +70,7 @@ link:https://docs.netapp.com/us-en/data-services-copy-sync/task-quick-start.html
 
 
 
+[[scan-and-classify-your-data]]
 === Scansiona e classifica i tuoi dati
 
 NetApp Data Classification consente di analizzare e classificare i dati nel multicloud ibrido della tua organizzazione.
@@ -72,6 +79,7 @@ link:https://docs.netapp.com/us-en/data-services-data-classification/index.html[
 
 
 
+[[speed-up-access-or-offload-traffic]]
 === Accelerare l'accesso o scaricare il traffico
 
 NetApp Volume Caching fornisce un volume persistente e scrivibile in una posizione remota.  È possibile utilizzare la memorizzazione nella cache dei volumi per velocizzare l'accesso ai dati o per scaricare il traffico dai volumi a cui si accede più frequentemente.

@@ -4,6 +4,7 @@
 
 
 
+[[credentials-update]]
 === Aggiornamento delle credenziali
 
 Dopo aver impostato le credenziali e le autorizzazioni per il file system FSx for ONTAP , verrai reindirizzato alla pagina Credenziali BlueXP .  Da questa pagina puoi rinominare o rimuovere le tue credenziali FSx per ONTAP .

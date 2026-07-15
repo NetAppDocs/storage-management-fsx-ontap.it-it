@@ -4,6 +4,7 @@
 
 
 
+[[support-for-replicating-data-between-two-fsx-for-ontap-file-systems]]
 === Supporto per la replica dei dati tra due file system FSx per ONTAP
 
 La replica dei dati è ora disponibile tra due file system FSx per ONTAP dalla canvas nella console BlueXP .

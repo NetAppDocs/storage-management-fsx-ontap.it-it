@@ -4,12 +4,14 @@
 
 
 
+[[add-a-storage-vm]]
 === Aggiungi una VM di archiviazione
 
 Ora puoi aggiungere una VM di archiviazione al file system Amazon FSx for NetApp ONTAP utilizzando BlueXP.
 
 
 
+[[my-opportunities-tab-is-now-my-estate]]
 === La scheda **Le mie opportunità** ora è **Il mio patrimonio**
 
 La scheda **Le mie opportunità** ora si chiama **Il mio patrimonio**.  La documentazione è stata aggiornata per riflettere il nuovo nome.
